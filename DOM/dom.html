@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom </title>
+
+   <style>
+       *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+       }
+
+       nav{
+        height: 80px;
+        background-color: antiquewhite;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+       }
+
+       nav > ul{
+        display: flex;
+        gap:15px;
+        list-style: none;
+       }
+
+       nav > ul > li{
+        font-size: 19px;
+        font-weight: bold;
+        
+       }
+
+       section{
+        display: flex;
+        height: 275px;
+        background-color: bisque;
+        justify-content: space-around;
+        align-items: center;
+       }
+
+       section > .card{
+        height: 245px;
+        width: 300px;
+        background-color: white;
+        padding: 10px 20px;
+        border-radius: 16px;
+        box-shadow: 0px 4px 6px rgba(0,0,0,0.6);
+       }
+
+       .right > .btn{
+         padding: 10px 20px;
+         border: none;
+         background-color: orange;
+         border-radius: 10px;
+         font-size: 18px;
+         color: white;
+         font-weight: bold;
+         cursor: pointer;
+       }
+
+       article{
+        height: 350px;
+        background-color: #212120;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+       }
+
+       article > .box{
+        height: 275px;
+        width: 300px;
+        background-color: white;
+        border-radius: 20px;
+        padding: 10px 20px;
+       }
+
+    article > .dark{
+         background-color: green;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         gap:15px;
+         color:white;
+       }
+
+       .circle{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: white;
+        border: 3px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+   </style>
+</head>
+<body>
+    
+    <nav>
+        <h2 id="logo">mylogo</h2>
+
+        <ul>
+            <li> home </li>
+            <li id="about"> About</li>
+            <li> contact</li>
+        </ul>
+
+        <div class="right ">
+            <button class="btn">login</button>         
+        </div>
+    </nav>
+
+    <section>
+        <div class="card">
+            <h3> card1</h3>
+            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, possimus.</p>
+        </div>
+        <div class="card">
+            <h3> card2</h3>
+            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, possimus.</p>
+        </div>
+        <div class="card">
+            <h3> card3</h3>
+            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque, possimus.</p>
+
+            <h2> subjects</h2>
+            <ol id="ol">
+                
+
+            </ol>
+        </div>
+        
+    </section>
+
+
+    <article>
+        <div class="box"></div>
+        <div class="box">
+           
+        </div>
+        <div class="box"></div>
+    </article>
+
+
+
+    <script src="./dom.js"></script>
+</body>
+</html>
