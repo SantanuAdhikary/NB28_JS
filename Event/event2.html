@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event in javascript part II</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .header{
+            height: 275px;
+            /* background-color: bisque; */
+            background-image: linear-gradient(blue,white);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap:15px;
+        }
+
+    
+        .main{
+            height: calc(100vh - 275px) ;
+            background-image: linear-gradient(red,yellow);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .main > input{
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+        }
+        .main > .output{
+            border: 2px solid black;
+            width: 300px;
+            height: 100px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+
+    <div class="header">
+        <h1> keyboard and form event</h1>
+        <div class="article">
+            <button onclick="hello()">Event Handler</button>
+            <button>Event Listener</button>
+            <button>Event Object</button>
+        </div>
+
+        
+
+        <a href="./event.html"> go to event part 1</a>
+    </div>
+
+
+    <div class="main">
+        <h1> keyborad event</h1>
+        <h2> keydown and keyup event</h2>
+        <input type="text" id="inp1">
+        <div class="output">
+
+        </div>
+    </div>
+
+
+    <script src="./event2.js"></script>
+</body>
+</html>

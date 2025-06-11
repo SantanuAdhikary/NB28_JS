@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form event</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .outer{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: antiquewhite;
+            position: relative;
+        }
+
+        .inner{
+            width: 350px;
+            padding: 10px 20px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.5);
+
+        }
+
+        form > label{
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            font-size: 17px;
+        }
+        form > input{
+            display: block;
+            margin-bottom: 8px;
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+        }
+
+        form > button{
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            font-size: 18px;
+            font-weight: bold;
+            background-color: #666;
+            color:white;
+            transition: background-color 0.4s ease-in;
+            cursor: pointer;
+        }
+
+        form > button:hover{
+            background-color: #555;
+        }
+
+
+        input::placeholder{
+            font-size: 18px;
+        }
+
+        select{
+            position: absolute;
+            top:0;
+            right: 10px;
+            padding: 10px;
+            font-size: 18px;
+            
+        }
+       
+    </style>
+
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">
+             <form action="" >
+                <label for="">Name</label>
+                <input type="text" placeholder="enter name" id="username">
+                <label for="">Password</label>
+                <input type="text" placeholder="enter password" id="userpass">
+                <label for="">Phone number</label>
+                <input type="text" placeholder="enter phone number" id="userph">
+                <button>Register</button>
+             </form>
+        </div>
+
+        <select name="" id="">
+            <option value="">select color</option>
+            <option value="red">red</option>
+            <option value="green">green</option>
+            <option value="blue">blue</option>
+        </select>
+    </div>
+
+    <script src="./form.js"></script>
+</body>
+</html>
